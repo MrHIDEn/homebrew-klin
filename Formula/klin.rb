@@ -1,17 +1,16 @@
 # typed: false
 # frozen_string_literal: true
 
-# Homebrew formula for the Klin compiler (issue 067).
+# Homebrew tap formula for the Klin compiler.
+# Repo: https://github.com/MrHIDEn/homebrew-klin
 #
-# Tap (recommended):
 #   brew tap dart-lang/dart
 #   brew install mrhiden/klin/klin
+#
+# HEAD:
 #   brew install --HEAD mrhiden/klin/klin
 #
-# From this clone:
-#   brew install --formula Formula/klin.rb
-#   brew install --HEAD --formula Formula/klin.rb
-# See docs/17-homebrew.md. Keep in sync with MrHIDEn/homebrew-klin.
+# Keep in sync with https://github.com/MrHIDEn/klin Formula/klin.rb.
 class Klin < Formula
   desc "Systems language that compiles to C"
   homepage "https://github.com/MrHIDEn/klin"
