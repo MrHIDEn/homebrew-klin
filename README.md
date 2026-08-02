@@ -4,17 +4,26 @@ Homebrew tap for the [Klin](https://github.com/MrHIDEn/klin) compiler.
 
 ## Install
 
+Short form (auto-taps this repo):
+
 ```sh
-brew tap dart-lang/dart   # build dependency
-brew tap mrhiden/klin
-brew install klin
+brew tap dart-lang/dart
+brew install mrhiden/klin/klin
 klin --version
 ```
 
-Latest `main` (unreleased):
+Explicit:
 
 ```sh
-brew install --HEAD klin
+brew tap dart-lang/dart
+brew tap mrhiden/klin
+brew install klin
+```
+
+HEAD (`main`):
+
+```sh
+brew install --HEAD mrhiden/klin/klin
 ```
 
 Upgrade:
@@ -27,4 +36,4 @@ brew upgrade klin
 
 - Klin needs a host C compiler (`gcc`, `clang`, or `tcc`) for `klin run`.
 - Stable installs build from the GitHub source tag (see `Formula/klin.rb`).
-- Binaries are also published on [Klin releases](https://github.com/MrHIDEn/klin/releases).
+- Binaries: [Klin releases](https://github.com/MrHIDEn/klin/releases).
